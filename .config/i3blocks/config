@@ -1,0 +1,35 @@
+
+# i3blocks config file
+
+[wireless]
+command=$HOME/scripts/wireless_status.sh
+interval=1
+
+[disk]
+command=$HOME/scripts/disk_status.sh
+interval=1
+
+[load]
+command=$HOME/scripts/load_status.sh
+interval=1
+
+[memory]
+command=$HOME/scripts/memory_status.sh
+interval=1
+
+[time]
+command=date "+ %a %d-%m-%Y  %H:%M:%S"
+interval=1
+
+[volume]
+command=pactl get-sink-mute @DEFAULT_SINK@ | grep -q 'yes' && echo "Vol Mute" || echo "Vol $(pactl get-sink-volume @DEFAULT_SINK@ | awk '{print $5}')"
+interval=1
+
+[battery]
+command=$HOME/scripts/battery_status.sh
+interval=1
+
+[brightness]
+command=$HOME/scripts/brightness_status.sh
+interval=1
+

@@ -1,0 +1,10 @@
+[Added Associations]
+application/x-shellscript=terminator.desktop;
+
+[Default Applications]
+text/html=terminator.desktop
+x-scheme-handler/http=terminator.desktop
+x-scheme-handler/https=terminator.desktop
+x-scheme-handler/about=terminator.desktop
+x-scheme-handler/unknown=terminator.desktop
+x-scheme-handler/terminal=terminator.desktop
